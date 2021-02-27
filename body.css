@@ -1,0 +1,11 @@
+.body {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	overflow: hidden;
+	transition: background-color .5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}

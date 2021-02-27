@@ -1,0 +1,10 @@
+.corner {
+  border-radius: 15px;
+  background: #f1f1f1;
+  padding: 5%;
+  width: 50%;
+  height: 10%;
+  margin: auto;
+  overflow: hidden;
+  transition: background-color .5s;
+}

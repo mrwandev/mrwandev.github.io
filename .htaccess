@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{odr} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

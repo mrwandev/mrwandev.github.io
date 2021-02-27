@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>mrwan dev</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="bars.css">
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" type="text/css" href="themeSwitch.css">
+<link rel="stylesheet" type="text/css" href="corner.css">
+<link rel="stylesheet" type="text/css" href="body.css">
+
+</head>
+
+<body style="background-color: #f1f1f1">
+
+<div class="header" id = "header1" style="background-color: #ffffff">
+
+  <div class="header-left">
+    <div class="container" onclick="bars(this)">
+      <div class="bar1" id="bar1"></div>
+      <div class="bar2" id="bar2"></div>
+      <div class="bar3" id="bar3"></div>
+
+    </div>
+  </div>
+
+    <a href="https://mrwandev.github.io" class="logo" id="logo">mrwandev</a>
+
+  <div class="header-right">
+    <a href="https://mrwandev.github.io" id="att1">Home</a>
+    <!-- <a class="active" href="#home">Home</a>  -->
+    <a href="" id="att2">Contact</a>
+    <a href="" id="att3">About</a>
+    <a href="#google">ffffffff</a>
+    <div class="space" style="width: 20px;"></div>
+    <label class="switch" onclick="checkBoxFunction()">
+        <input type="checkbox" id="themeCheck">
+        <span class="slider round"></span>
+    </label> 
+    <div class="space" style="width: 10px;"></div>
+  </div>
+
+
+
+
+
+</div>
+<div class="space" style="width: 10%;"></div>
+<div class="corner">
+<p>yo, i'm</p>
+<p>mrwan dev</p>
+<p>FRONT-END WEB DEVELOPER</p>
+
+<a href ="" download = "/use this.png">dayoooom</a>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="google">ffff</div>
+<script>
+function bars(x) 
+{
+    x.classList.toggle("change");
+}
+function checkBoxFunction() 
+{
+    var checkBox = document.getElementById("themeCheck");
+
+    if (checkBox.checked == true)
+    {
+        document.body.style.background = "#ffffff";
+        document.getElementById("header1").style.backgroundColor = "#f1f1f1";
+
+        document.getElementById("att1").style.color = "#000000";
+        document.getElementById("att2").style.color = "#000000";
+        document.getElementById("att3").style.color = "#000000";
+        document.getElementById("logo").style.color = "#000000";
+
+        document.documentElement.style.setProperty('--hoverColor', '#dddddd');
+
+        document.getElementById("bar1").style.backgroundColor = "#333";
+        document.getElementById("bar2").style.backgroundColor = "#333";
+        document.getElementById("bar3").style.backgroundColor = "#333";
+    } 
+    else 
+    {
+        document.body.style.background = "#222222";
+        document.getElementById("header1").style.backgroundColor = "#000000";
+
+        document.getElementById("att1").style.color = "#ffffff";
+        document.getElementById("att2").style.color = "#ffffff";
+        document.getElementById("att3").style.color = "#ffffff";
+        document.getElementById("logo").style.color = "#ffffff";
+
+        document.documentElement.style.setProperty('--hoverColor', '#595959');
+
+        document.getElementById("bar1").style.backgroundColor = "#ffffff";
+        document.getElementById("bar2").style.backgroundColor = "#ffffff";
+        document.getElementById("bar3").style.backgroundColor = "#ffffff";
+    }
+
+}
+checkBoxFunction()
+</script>
+
+<!-- <a>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mrwandev&langs_count=10&hide=stars,commits,prs,issues,contribs&show_icons=true&theme=tokyonight" alt="Mrwan's github stats"/>
+</a> -->
+
+</body>
+</html>
