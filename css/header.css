@@ -102,4 +102,12 @@ body {
     outline:0;
     transition: background-color var(--transitionTime);
   }
+    .header {
+    position:fixed;
+    width:100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 15px 10px;
+    transition: background-color var(--transitionTime);
+  }
 }
