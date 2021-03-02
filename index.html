@@ -35,7 +35,7 @@
     <a href="" id="att2">Contact</a>
     <a href="#google" id="att3" style="margin-right: 10px">About</a>
 
-    <label class="switch" onclick="checkBoxFunction()" style="margin-right: 10px">
+    <label id="switch" class="switch" onclick="checkBoxFunction()" style="margin-right: 10px">
         <input type="checkbox" id="themeCheck">
         <span class="slider round"></span>
     </label> 
@@ -52,17 +52,19 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div id="google">ffff</div>
 <script>
+
 function bars(x) {
     x.classList.toggle("change");
 }
 
 function checkBoxFunction() {
+    document.documentElement.style.setProperty('--transitionTimeSwitch', '.4s');
+    document.documentElement.style.setProperty('--transitionTime', '.4s');
+
     var checkBox = document.getElementById("themeCheck");
 
-    document.documentElement.style.setProperty('--transitionTime', '.4s');
-    document.documentElement.style.setProperty('--transitionTimeSwitch', '.4s');
-
     if (checkBox.checked == true) {
+
         document.body.style.background = "#ffffff";
         document.getElementById("header1").style.backgroundColor = "#f1f1f1";
 
@@ -92,9 +94,8 @@ function checkBoxFunction() {
         document.getElementById("bar2").style.backgroundColor = "#ffffff";
         document.getElementById("bar3").style.backgroundColor = "#ffffff";
     }
-
+    
 }
-
 checkBoxFunction()
 </script>
 

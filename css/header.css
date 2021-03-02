@@ -81,33 +81,33 @@ body {
     font-size: 15px; 
     line-height: 25px;
     border-radius: 2px;
-    width:auto;
-    display:block;
-    outline:0;
     transition: background-color var(--transitionTime);
+    transition: var(--transitionTime);
+  }
+  .header {
+    background-color: #ffffff;
+    padding: 10px 10px;
+    transition: background-color var(--transitionTime);
+    transition: var(--transitionTime);
   }
 }
 @media screen and (max-width: 435px) {
-    .header a {
+  .header a {
     float: left;
     color: black;
     text-align: center;
-    padding: 12px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 5px; 
-    line-height: 25px;
+    font-size: 9px; 
+    line-height: 10px;
     border-radius: 2px;
-    width:auto;
-    display:block;
-    outline:0;
     transition: background-color var(--transitionTime);
+    transition: var(--transitionTime);
   }
-    .header {
-    position:fixed;
-    width:100%;
-    overflow: hidden;
+  .header {
     background-color: #ffffff;
-    padding: 15px 10px;
+    padding: 10px 10px;
     transition: background-color var(--transitionTime);
+    transition: var(--transitionTime);
   }
 }
