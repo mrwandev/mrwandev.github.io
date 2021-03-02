@@ -1,3 +1,7 @@
+:root {
+ --transitionTime: .1s;
+}
+
 .corner {
   border-radius: 15px;
   background: #f1f1f1;
@@ -6,5 +10,5 @@
   height: 10%;
   margin: auto;
   overflow: hidden;
-  transition: background-color .5s;
+  transition: background-color var(--transitionTime);
 }

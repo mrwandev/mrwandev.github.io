@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" type="text/css" href="bars.css">
-<link rel="stylesheet" type="text/css" href="header.css">
-<link rel="stylesheet" type="text/css" href="themeSwitch.css">
-<link rel="stylesheet" type="text/css" href="corner.css">
-<link rel="stylesheet" type="text/css" href="body.css">
+<link rel="stylesheet" type="text/css" href="css/bars.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/themeSwitch.css">
+<link rel="stylesheet" type="text/css" href="css/corner.css">
+<link rel="stylesheet" type="text/css" href="css/body.css">
 
 </head>
 
@@ -23,52 +23,48 @@
       <div class="bar1" id="bar1"></div>
       <div class="bar2" id="bar2"></div>
       <div class="bar3" id="bar3"></div>
-
     </div>
   </div>
 
-    <a href="https://mrwandev.github.io" class="logo" id="logo">mrwandev</a>
+    <a href="https://mrwandev.github.io" class="l3iba" id="logo">mrwandev</a>
 
   <div class="header-right">
+
     <a href="https://mrwandev.github.io" id="att1">Home</a>
     <!-- <a class="active" href="#home">Home</a>  -->
     <a href="" id="att2">Contact</a>
-    <a href="" id="att3">About</a>
-    <a href="#google">ffffffff</a>
-    <div class="space" style="width: 20px;"></div>
-    <label class="switch" onclick="checkBoxFunction()">
+    <a href="#google" id="att3" style="margin-right: 10px">About</a>
+
+    <label class="switch" onclick="checkBoxFunction()" style="margin-right: 10px">
         <input type="checkbox" id="themeCheck">
         <span class="slider round"></span>
     </label> 
-    <div class="space" style="width: 10px;"></div>
+
   </div>
-
-
-
-
-
 </div>
-<div class="space" style="width: 10%;"></div>
+
 <div class="corner">
-<p>yo, i'm</p>
-<p>mrwan dev</p>
-<p>FRONT-END WEB DEVELOPER</p>
+    <p>yo, i'm</p>
+    <p>mrwan dev</p>
+    <p>FRONT-END WEB DEVELOPER</p>
 
-<a href ="" download = "/use this.png">dayoooom</a>
+    <a href ="" download = "/use this.png">dayoooom</a>
 </div>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div id="google">ffff</div>
 <script>
-function bars(x) 
-{
+function bars(x) {
     x.classList.toggle("change");
 }
-function checkBoxFunction() 
-{
+
+function checkBoxFunction() {
     var checkBox = document.getElementById("themeCheck");
 
-    if (checkBox.checked == true)
-    {
+    document.documentElement.style.setProperty('--transitionTime', '.4s');
+    document.documentElement.style.setProperty('--transitionTimeSwitch', '.4s');
+
+    if (checkBox.checked == true) {
         document.body.style.background = "#ffffff";
         document.getElementById("header1").style.backgroundColor = "#f1f1f1";
 
@@ -83,8 +79,7 @@ function checkBoxFunction()
         document.getElementById("bar2").style.backgroundColor = "#333";
         document.getElementById("bar3").style.backgroundColor = "#333";
     } 
-    else 
-    {
+    else {
         document.body.style.background = "#222222";
         document.getElementById("header1").style.backgroundColor = "#000000";
 
@@ -101,6 +96,7 @@ function checkBoxFunction()
     }
 
 }
+
 checkBoxFunction()
 </script>
 
