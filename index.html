@@ -11,12 +11,13 @@
 <link rel="stylesheet" type="text/css" href="css/themeSwitch.css">
 <link rel="stylesheet" type="text/css" href="css/corner.css">
 <link rel="stylesheet" type="text/css" href="css/body.css">
+<script src="javascript.js">checkBoxFunction()</script>
 
 </head>
 
 <body style="background-color: #f1f1f1">
 
-<div class="header" id = "header1" style="background-color: #ffffff">
+<div class="header" id ="header1" style="background-color: #f5f5f5">
 
   <div class="header-left">
     <div class="container" onclick="bars(this)">
@@ -29,83 +30,30 @@
     <a href="https://mrwandev.github.io" class="l3iba" id="logo">mrwandev</a>
 
   <div class="header-right">
-    <a href="https://mrwandev.github.io" id="att1">Home</a>
+    <a href="#home" id="att1">Home</a>
     <!-- <a class="active" href="#home">Home</a>  -->
     <a href="" id="att2">Contact</a>
-    <a href="#google" id="att3" style="margin-right: 10px">About</a>
+    <a href="#about" id="att3" style="margin-right: 10px">About</a>
 
     <label id="switch" class="switch" onclick="checkBoxFunction()" style="margin-right: 10px">
         <input type="checkbox" id="themeCheck">
         <span class="slider round"></span>
     </label> 
   </div>
-
 </div>
 
-<div class="topnav">
+<div id="home" style="padding:60px 0px;"></div>
+
+<div id="space" style="padding:600px 0px;"></div>
+
+<div id="about" style="padding:60px 0px;"></div>
+
 	<div class="corner">
-	    <p>yeeeeeeee</p>
+	    <p>this website contains stuff</p>
 	    <!-- <a href ="" download = "/use this.png">dayoooom</a> -->
 	</div>
-</div>
 
-
-<div id="google">ffff</div>
-
-
-
-
-
-
-
-
-<script>
-
-function bars(x) {
-    x.classList.toggle("change");
-}
-
-function checkBoxFunction() {
-    document.documentElement.style.setProperty('--transitionTimeSwitch', '.4s');
-    document.documentElement.style.setProperty('--transitionTime', '.4s');
-
-    var checkBox = document.getElementById("themeCheck");
-
-    if (checkBox.checked == true) {
-
-        document.body.style.background = "#ffffff";
-        document.getElementById("header1").style.backgroundColor = "#f1f1f1";
-
-        document.getElementById("att1").style.color = "#000000";
-        document.getElementById("att2").style.color = "#000000";
-        document.getElementById("att3").style.color = "#000000";
-        document.getElementById("logo").style.color = "#000000";
-
-        document.documentElement.style.setProperty('--hoverColor', '#dddddd');
-
-        document.getElementById("bar1").style.backgroundColor = "#333";
-        document.getElementById("bar2").style.backgroundColor = "#333";
-        document.getElementById("bar3").style.backgroundColor = "#333";
-    } 
-    else {
-        document.body.style.background = "#222222";
-        document.getElementById("header1").style.backgroundColor = "#000000";
-
-        document.getElementById("att1").style.color = "#ffffff";
-        document.getElementById("att2").style.color = "#ffffff";
-        document.getElementById("att3").style.color = "#ffffff";
-        document.getElementById("logo").style.color = "#ffffff";
-
-        document.documentElement.style.setProperty('--hoverColor', '#595959');
-
-        document.getElementById("bar1").style.backgroundColor = "#ffffff";
-        document.getElementById("bar2").style.backgroundColor = "#ffffff";
-        document.getElementById("bar3").style.backgroundColor = "#ffffff";
-    }
-    
-}
-checkBoxFunction()
-</script>
+<div id="space" style="padding:180px 0px;"></div>
 
 <!-- <a>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mrwandev&langs_count=10&hide=stars,commits,prs,issues,contribs&show_icons=true&theme=tokyonight" alt="Mrwan's github stats"/>
