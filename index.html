@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/themeSwitch.css">
 <link rel="stylesheet" type="text/css" href="css/corner.css">
 <link rel="stylesheet" type="text/css" href="css/body.css">
-<script src="javascript.js">checkBoxFunction()</script>
+<script src="javascript.js"></script>
 
 </head>
 
@@ -54,6 +54,54 @@
 	</div>
 
 <div id="space" style="padding:180px 0px;"></div>
+
+<script>
+
+function checkBoxFunction() {
+    document.documentElement.style.setProperty('--transitionTimeSwitch', '.4s');
+    document.documentElement.style.setProperty('--transitionTime', '.4s');
+
+    var checkBox = document.getElementById("themeCheck");
+
+    if (checkBox.checked == true) {
+
+        document.body.style.background = "#f1f1f1";
+        document.getElementById("header1").style.backgroundColor = "#f5f5f6";
+
+        document.getElementById("att1").style.color = "#131313";
+        document.getElementById("att2").style.color = "#131313";
+        document.getElementById("att3").style.color = "#131313";
+        document.getElementById("logo").style.color = "#131313";
+
+        document.documentElement.style.setProperty('--hoverColor', '#dddddd');
+        document.documentElement.style.setProperty('--shadowColor', 'black');
+        document.documentElement.style.setProperty('--cornerColor', '#f1f1f1');
+
+        document.getElementById("bar1").style.backgroundColor = "#131313";
+        document.getElementById("bar2").style.backgroundColor = "#131313";
+        document.getElementById("bar3").style.backgroundColor = "#131313";
+    } 
+    else {
+        document.body.style.background = "#131313";
+        document.getElementById("header1").style.backgroundColor = "#202020";
+
+        document.getElementById("att1").style.color = "#e1e1e1";
+        document.getElementById("att2").style.color = "#e1e1e1";
+        document.getElementById("att3").style.color = "#e1e1e1";
+        document.getElementById("logo").style.color = "#e1e1e1";
+
+        document.documentElement.style.setProperty('--hoverColor', '#595959');
+        // document.documentElement.style.setProperty('--shadowColor', 'white');
+        document.documentElement.style.setProperty('--cornerColor', '#202020');
+
+        document.getElementById("bar1").style.backgroundColor = "#e1e1e1";
+        document.getElementById("bar2").style.backgroundColor = "#e1e1e1";
+        document.getElementById("bar3").style.backgroundColor = "#e1e1e1";
+    }
+}
+checkBoxFunction()
+
+</script>
 
 <!-- <a>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mrwandev&langs_count=10&hide=stars,commits,prs,issues,contribs&show_icons=true&theme=tokyonight" alt="Mrwan's github stats"/>

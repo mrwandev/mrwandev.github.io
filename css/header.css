@@ -73,8 +73,9 @@ body {
   transition: background-color var(--transitionTime);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .header a {
+      display: none;
       float: left;
       color: black;
       text-align: center;
