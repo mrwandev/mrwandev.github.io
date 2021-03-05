@@ -13,45 +13,54 @@
 	
 let timerInterval = null;
 
-
-
-function formatTimeLeft(time) {
+function timer(time) {
   // The largest round integer less than or equal to the result of time divided being by 60.
   const minutes = Math.floor(time / 60);
   
   // Seconds are the remainder of the time divided by 60 (modulus operator)
   let seconds = time % 60;
   
-  // If the value of seconds is less than 10, then display seconds with a leading zero
+  // 10 after its 09
   if (seconds < 10) {
+  	// 01
     // seconds = `0${seconds}`;
+    // 1
     seconds = `${seconds}`;
   }
 
-  // The output in MM:SS format
+  // 00:00
   // return `${minutes}:${seconds}`;
+
+  // 0
   return `${seconds}`;
 }
 
-const TIME_LIMIT = 11;
+const time = 11;
 
 // Initially, no time has passed, but this will count up
-// and subtract from the TIME_LIMIT
+// and subtract from the time
 let timePassed = 0;
-let timeLeft = TIME_LIMIT;
+let timeLeft = time;
+var secondsStr;
 
 function startTimer() {
   timerInterval = setInterval(() => {
     
     // The amount of time passed increments by one
     timePassed = timePassed += 1;
-    timeLeft = TIME_LIMIT - timePassed;
+    timeLeft = time - timePassed;
 
     if(timeLeft == 0)
     	window.location.replace("http://mrwandev.github.io/junkyard");
     
-    // The time left label is updated
-	document.getElementById("demo").innerHTML = "u will be redirected to the junkyard in " + formatTimeLeft(timeLeft) + " seconds";
+    if(timeLeft > 1 || timeLeft == 0) {
+    	secondsStr = " seconds";
+    }
+    else if (timeLeft == 1){
+    	secondsStr = " second";
+    }
+
+	document.getElementById("demo").innerHTML = "u will be redirected to the junkyard in " + timer(timeLeft) + secondsStr;
   }, 1000);
 }
 startTimer()
