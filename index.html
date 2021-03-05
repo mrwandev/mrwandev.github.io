@@ -7,14 +7,54 @@
 </head>
 </head>
 <body>
-	<p>bye</p>
+<p id="demo"></p>
 
-	<script>
-		// Simulate a mouse click:
-		// window.location.href = "http://mrwandev.github.io/junkyard";
+<script>
+	
+let timerInterval = null;
 
-		// Simulate an HTTP redirect:
-		window.location.replace("http://mrwandev.github.io/junkyard");
-	</script>
+
+
+function formatTimeLeft(time) {
+  // The largest round integer less than or equal to the result of time divided being by 60.
+  const minutes = Math.floor(time / 60);
+  
+  // Seconds are the remainder of the time divided by 60 (modulus operator)
+  let seconds = time % 60;
+  
+  // If the value of seconds is less than 10, then display seconds with a leading zero
+  if (seconds < 10) {
+    // seconds = `0${seconds}`;
+    seconds = `${seconds}`;
+  }
+
+  // The output in MM:SS format
+  // return `${minutes}:${seconds}`;
+  return `${seconds}`;
+}
+
+const TIME_LIMIT = 11;
+
+// Initially, no time has passed, but this will count up
+// and subtract from the TIME_LIMIT
+let timePassed = 0;
+let timeLeft = TIME_LIMIT;
+
+function startTimer() {
+  timerInterval = setInterval(() => {
+    
+    // The amount of time passed increments by one
+    timePassed = timePassed += 1;
+    timeLeft = TIME_LIMIT - timePassed;
+
+    if(timeLeft == 0)
+    	window.location.replace("http://mrwandev.github.io/junkyard");
+    
+    // The time left label is updated
+	document.getElementById("demo").innerHTML = "u will be redirected to the junkyard in " + formatTimeLeft(timeLeft) + " seconds";
+  }, 1000);
+}
+startTimer()
+</script>
 </body>
 </html>
