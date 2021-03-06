@@ -1,4 +1,4 @@
-this is a website im making tha will contain :
+this is a website im making that will contain :
 
 memez at <a href="git.io/memez">git.io/memez</a>
 
