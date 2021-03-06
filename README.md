@@ -1,31 +1,15 @@
 # mrwandev.github.io
-<h1 align="center">big title</h1>
-<p align="center">smol <a href="http://mrwandev.github.io">link</a> yeeeee.</p>
-
-<p align="center">
-    <a href="https://pypi.org/project/auto-py-to-exe/"><img src="https://img.shields.io/pypi/v/auto-py-to-exe.svg" alt="PyPI Version"></a>
-    <a href="https://pypi.org/project/auto-py-to-exe/"><img src="https://img.shields.io/pypi/pyversions/auto-py-to-exe.svg" alt="PyPI Supported Versions"></a>
-    <a href="https://pypi.org/project/auto-py-to-exe/"><img src="https://img.shields.io/pypi/l/auto-py-to-exe.svg" alt="License"></a>
-    <a href="http://pepy.tech/project/auto-py-to-exe"><img src="http://pepy.tech/badge/auto-py-to-exe" alt="Downloads"></a>
-    <a href="https://pyinstaller.readthedocs.io/en/stable/requirements.html"><img src="https://img.shields.io/badge/platform-windows%20%7C%20linux%20%7C%20macos-lightgrey" alt="Supported Platforms"></a>
-</p>
+<h1 align="center">the website</h1>
 
 ## Getting Started
 
-### Prerequisites
  - Python : Python 2.7 / 3.5-3.7 (see [here](https://github.com/pyinstaller/pyinstaller/issues/4311) for 3.8)
 
 *To have the interface displayed in the images, you will need chrome. If chrome is not installed or --no-chrome is supplied, the default browser will be used.*
 
-### Installation and Usage
-#### Installing Via [PyPI](https://pypi.org/project/auto-py-to-exe/)
 You can install this project using PyPI:
 ```
 $ pip install auto-py-to-exe
-```
-Then to run it, execute the following in the terminal:
-```
-$ auto-py-to-exe
 ```
 
 ### Installing Via [GitHub](https://github.com/brentvollebregt/auto-py-to-exe)
