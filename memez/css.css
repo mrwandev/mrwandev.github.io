@@ -10,9 +10,15 @@ html {
 	scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 1012px) {
 	.meme {
 		width: 33%; 
 		height: 33%;
+	}
+}
+@media screen and (min-width: 380px) {
+	.meme {
+		width: 32%; 
+		height: 32%;
 	}
 }
