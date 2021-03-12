@@ -1,2 +1,2 @@
-python find_memez.py
+python replace_file_names.py
 pause
