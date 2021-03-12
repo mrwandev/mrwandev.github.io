@@ -5,9 +5,9 @@ dir_ = input()
 
 textFile = open("text.txt", "a")
 
-for file in os.listdir(dir_):
+for file in sorted(os.listdir(dir_)):
 	if file.endswith(".jpg") or file.endswith(".JPG") or file.endswith(".png") or file.endswith(".PNG"):
 		# print('<img class="meme" src="' + os.path.join(file) + '">')
-		textFile.write('<img class="meme" src="' + os.path.join(file) + '">\n')
+		textFile.write('"' + os.path.join(file) + '"' + ', ')
 
 pause = input()
