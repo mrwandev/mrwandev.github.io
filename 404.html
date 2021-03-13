@@ -24,11 +24,11 @@
 		var where;
 
 		if(slashesNum == 1)
-			where = '';
-		else if(slashesNum == 2)
 			where = '../';
-		else if(slashesNum == 3)
+		else if(slashesNum == 2)
 			where = '../../';
+		else if(slashesNum == 3)
+			where = '../../../';
 
 		var tagToAdd = document.createElement("script");
 		tagToAdd.setAttribute('src', where + 'javascript.js');
