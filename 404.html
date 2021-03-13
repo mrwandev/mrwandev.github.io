@@ -41,20 +41,17 @@
 
 		// checks if there is a script tag cuz else it'll skip the function that redirects
 		let update = null;
-		var callOneTime = true;
 
-		if(callOneTime)
+		update = setInterval(() => 
 		{
-			update = setInterval(() => 
+			if(document.querySelector('head').contains(document.querySelector('script')))
 			{
-				if(document.querySelector('head').contains(document.querySelector('script')))
-				{
-					// function that calls another function cuz cant call function in main file from this interval
-					callRedirect();
-					callOneTime = false;
-				}
-			}, 1000);
-		}
+				// function that calls another function cuz cant call function in main file from this interval
+				callRedirect();
+				clearInterval(update);
+			}
+		}, 1000);
+		
 		
 
 	</script>
