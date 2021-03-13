@@ -1,51 +1,38 @@
-function bars(x) {
-    x.classList.toggle("change");
-};
+import { redirectWithTimer } from './main.js';
 
-function goBack() {
-    window.history.back();
-};
+function handleTheMainJsScript(scriptName, headId)
+{
+    var slashesNum = (window.location.href.split("/").length - 1) - 2; // count slashes and the last -2 for the: https://
+    var where = '';
 
-function timer(time) {
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-  if (seconds < 10)
-    seconds = `${seconds}`;
- // seconds = `0${seconds}`;
-
-//return `${minutes}:${seconds}`;
-  return `${seconds}`;
-};
-
-let timerInterval = null;
-let timePassed = 0;
-var secondsStr;
-
-function redirectWithTimer(_time, direction, directionStr) {
-  const time = _time + 1;
-  let timeLeft = time;
-  timerInterval = setInterval(() => {
-    
-    // The amount of time passed increments by one
-    timePassed = timePassed += 1;
-    timeLeft = time - timePassed;
-
-    if(direction == "")
-      direction = "http://mrwandev.github.io/junkyard";
-
-    if(directionStr == "")
-          directionStr = "the junkyard";
-        
-    if(timeLeft == 0)
-    	window.location.replace(direction);
-    
-    if(timeLeft > 1 || timeLeft == 0) {
-    	secondsStr = " seconds";
-    }
-    else if (timeLeft == 1){
-    	secondsStr = " second";
+    // adds ../ with the slashesNum so it get the main script where ever u were in the goddamn website
+    for (i = 0; i < slashesNum - 1; i++) 
+    {
+        where += '../';
     }
 
-	document.getElementById("text").innerHTML = "u will be redirected to " + directionStr + " in " + timer(timeLeft) + secondsStr;
-  }, 1000);
+    // these 5 lines make a script tag: <script src="javascript.js" id="bruh">< /script> and put it in the head tag
+    var tagToAdd = document.createElement("script");
+    tagToAdd.setAttribute('src', where + scriptName + '.js');
+    tagToAdd.setAttribute('id', 'bruh'); // i needed it before but now nah but meeh whatever i jst wanted to keep it there. send me a dm in twitter @mrwandev "yeee boi im frm the code" if u read this.
+    var element = document.getElementById(headId);
+    element.appendChild(tagToAdd);
+
+    // checks if there is a script tag cuz else it'll skip the function that redirects
+    let update = null;
+
+    update = setInterval(() => 
+    {
+        if(document.querySelector('head').contains(document.querySelector('script')))
+        {
+            // function that calls another function cuz cant call function in main file from this interval
+            callRedirect();
+            clearInterval(update);
+        }
+    }, 0);
+}
+
+function callRedirect()
+{   
+    redirectWithTimer(10, "", "");
 };
