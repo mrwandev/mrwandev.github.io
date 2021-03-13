@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head id="head">
 
 <title>nop</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- all of these ../ are to get the functions i want from this one javascript file wherever there is a 404 page -->
-<script src="../../../../../javascript.js"></script>
-<script src="../../../../javascript.js"></script>
-<script src="../../../javascript.js"></script>
-<script src="../../javascript.js"></script>
-<script src="../javascript.js"></script>
-<script src="javascript.js"></script>
-</head>
+<!-- create these like <img shit with also the link / slashes -->
 </head>
 <body>
 	<p>nah bruh cant use this link</p>
@@ -25,7 +19,20 @@
 	<a href="../home">polished stuff</a>
 
 	<script>
-		redirectWithTimer(10, "", "")
+		var slashesNum = window.location.href.split("/").length - 1;
+		var where;
+
+		if(slashesNum == 1)
+			where = '../';
+		else if(slashesNum == 2)
+			where = '../../';
+
+		var tagToAdd = document.createElement("script");
+		tagToAdd.setAttribute('src', where + 'javascript.js');
+		var element = document.getElementById("head");
+		element.appendChild(tagToAdd);
+
+		// redirectWithTimer(10, "", "")
 	</script>
 	</body>
 </html>
