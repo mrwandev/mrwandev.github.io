@@ -33,13 +33,13 @@
 
 		var yes;
 
-		let timerInterval = null;
+		let update = null;
 
-		timerInterval = setInterval(() => 
+		update = setInterval(() => 
 		{
 			if(document.querySelector('head').contains(document.querySelector('script')))
 			{
-				redirectWithTimer(10, "", "");
+				document.querySelector('script').redirectWithTimer(10, "", "");
 			}
 		}, 1000);
 
