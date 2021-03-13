@@ -26,6 +26,11 @@
 			console.log(where)
 		}
 
+		function plz()
+		{
+			redirectWithTimer(10, "", "");
+		};
+
 		var tagToAdd = document.createElement("script");
 		tagToAdd.setAttribute('src', where + 'javascript.js');
 		tagToAdd.setAttribute('id', 'bruh');
@@ -40,7 +45,7 @@
 		{
 			if(document.querySelector('head').contains(document.querySelector('script')))
 			{
-				document.getElementById("bruh").redirectWithTimer(10, "", "");
+				plz();
 			}
 		}, 1000);
 
