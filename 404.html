@@ -28,7 +28,6 @@
 
 		var tagToAdd = document.createElement("script");
 		tagToAdd.setAttribute('src', where + 'javascript.js');
-		tagToAdd.setAttribute('class', 'thescript');
 		var element = document.getElementById("thehead");
 		element.appendChild(tagToAdd);
 
@@ -38,7 +37,7 @@
 
 		timerInterval = setInterval(() => 
 		{
-			if(document.querySelector('head').contains(thescript))
+			if(document.querySelector('head').contains(document.querySelector('script')))
 			{
 				// yes = true;
 				redirectWithTimer(10, "", "");
