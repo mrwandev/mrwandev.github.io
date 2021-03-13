@@ -1,5 +1,3 @@
-import { redirectWithTimer } from './main.js';
-
 function handleTheMainJsScript(scriptName, headId)
 {
     var slashesNum = (window.location.href.split("/").length - 1) - 2; // count slashes and the last -2 for the: https://
@@ -32,7 +30,12 @@ function handleTheMainJsScript(scriptName, headId)
     }, 0);
 }
 
+
+
 function callRedirect()
 {   
-    redirectWithTimer(10, "", "");
+    $.getscript("main.js", function()
+    {
+        redirectWithTimer(10, "", "");
+    });
 };
