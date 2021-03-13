@@ -21,7 +21,7 @@ let timerInterval = null;
 let timePassed = 0;
 var secondsStr;
 
-function redirectWithTimer(_time, direction, directionStr) {
+export function redirectWithTimer(_time, direction, directionStr) {
   const time = _time + 1;
   let timeLeft = time;
   timerInterval = setInterval(() => {
@@ -49,5 +49,3 @@ function redirectWithTimer(_time, direction, directionStr) {
 	document.getElementById("text").innerHTML = "u will be redirected to " + directionStr + " in " + timer(timeLeft) + secondsStr;
   }, 1000);
 };
-
-export { redirectWithTimer };

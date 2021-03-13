@@ -34,8 +34,5 @@ function handleTheMainJsScript(scriptName, headId)
 
 function callRedirect()
 {   
-    $.getscript("main.js", function()
-    {
-        redirectWithTimer(10, "", "");
-    });
+    redirectWithTimer(10, "", "");
 };
