@@ -32,22 +32,27 @@
 		var element = document.getElementById("thehead");
 		element.appendChild(tagToAdd);
 
-		var yes;
-
-		let timerInterval = null;
-
-		timerInterval = setInterval(() => 
-		{
-			if(head.contains(thescript))
-			{
-				yes = true;
-			}
-		}, 1000);
-
-		if(yes)
+		if(document.querySelector('head').contains(thescript))
 		{
 			redirectWithTimer(10, "", "");
 		}
+
+		// var yes;
+
+		// let timerInterval = null;
+
+		// timerInterval = setInterval(() => 
+		// {
+		// 	if(document.querySelector('head').contains(thescript))
+		// 	{
+		// 		yes = true;
+		// 		redirectWithTimer(10, "", "");
+		// 	}
+		// }, 1000);
+
+		// if(yes)
+		// {
+		// }
 	</script>
 	</body>
 </html>
