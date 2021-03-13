@@ -1,10 +1,10 @@
 function bars(x) {
     x.classList.toggle("change");
-}
+};
 
 function goBack() {
     window.history.back();
-}
+};
 
 function timer(time) {
   const minutes = Math.floor(time / 60);
@@ -15,7 +15,7 @@ function timer(time) {
 
 //return `${minutes}:${seconds}`;
   return `${seconds}`;
-}
+};
 
 let timerInterval = null;
 let timePassed = 0;
@@ -48,4 +48,4 @@ let timeLeft = time;
 
 	document.getElementById("text").innerHTML = "u will be redirected to " + directionStr + " in " + timer(timeLeft) + secondsStr;
   }, 1000);
-}
+};
