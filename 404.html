@@ -32,23 +32,18 @@
 		var element = document.getElementById("thehead");
 		element.appendChild(tagToAdd);
 
-		if(document.querySelector('head').contains(thescript))
+		var yes;
+
+		let timerInterval = null;
+
+		timerInterval = setInterval(() => 
 		{
-			redirectWithTimer(10, "", "");
-		}
-
-		// var yes;
-
-		// let timerInterval = null;
-
-		// timerInterval = setInterval(() => 
-		// {
-		// 	if(document.querySelector('head').contains(thescript))
-		// 	{
-		// 		yes = true;
-		// 		redirectWithTimer(10, "", "");
-		// 	}
-		// }, 1000);
+			if(document.querySelector('head').contains(thescript))
+			{
+				// yes = true;
+				redirectWithTimer(10, "", "");
+			}
+		}, 1000);
 
 		// if(yes)
 		// {
