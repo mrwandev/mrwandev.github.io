@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head id="head">
+<head id="thehead">
 
 <title>nop</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,23 +18,18 @@
 
 	<script>
 		var slashesNum = (window.location.href.split("/").length - 1) - 2; // the last -2 for the https://
-		console.log(slashesNum);
 		var where;
 
-		if(slashesNum == 1)
-			where = '';
-		else if(slashesNum == 2)
-			where = '../';
-		else if(slashesNum == 3)
-			where = '../../';
+		for (i = 0; i < slashesNum; i++) 
+			where += '../';
 
 		var tagToAdd = document.createElement("script");
 		tagToAdd.setAttribute('src', where + 'javascript.js');
-		var element = document.getElementById("head");
+		tagToAdd.setAttribute('class', 'thescript');
+		var element = document.getElementById("thehead");
 		element.appendChild(tagToAdd);
-		var yes = true;
 
-		if(yes)
+		if(head.contains(thescript))
 			redirectWithTimer(10, "", "");
 	</script>
 	</body>
