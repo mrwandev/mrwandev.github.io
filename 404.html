@@ -24,8 +24,10 @@
 		var where;
 
 		if(slashesNum == 1)
-			where = '../';
+			where = '';
 		else if(slashesNum == 2)
+			where = '../';
+		else if(slashesNum == 3)
 			where = '../../';
 
 		var tagToAdd = document.createElement("script");
