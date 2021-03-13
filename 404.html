@@ -32,7 +32,19 @@
 		var element = document.getElementById("thehead");
 		element.appendChild(tagToAdd);
 
-		if(head.contains(thescript))
+		var yes;
+
+		let timerInterval = null;
+
+		timerInterval = setInterval(() => 
+		{
+			if(head.contains(thescript))
+			{
+				yes = true;
+			}
+		}, 1000);
+
+		if(yes)
 		{
 			redirectWithTimer(10, "", "");
 		}
