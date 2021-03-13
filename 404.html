@@ -19,7 +19,7 @@
 	<a href="../home">polished stuff</a>
 
 	<script>
-		var slashesNum = window.location.href.split("/").length - 1;
+		var slashesNum = (window.location.href.split("/").length - 1) - 2; // the last -2 for the https://
 		console.log(slashesNum);
 		var where;
 
