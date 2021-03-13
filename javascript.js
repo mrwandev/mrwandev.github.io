@@ -22,8 +22,8 @@ let timePassed = 0;
 var secondsStr;
 
 function redirectWithTimer(_time, direction, directionStr) {
-const time = _time + 1;
-let timeLeft = time;
+  const time = _time + 1;
+  let timeLeft = time;
   timerInterval = setInterval(() => {
     
     // The amount of time passed increments by one
