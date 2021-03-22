@@ -1,0 +1,44 @@
+:root {
+ --transitionTime: .4s;
+ --shadowColor: black;
+ --cornerColor: #f5f5f5;
+}
+
+.corner {
+  float: right;
+  border-radius: 15px;
+  background: var(--cornerColor);
+  width: 400px;
+  height: 300px;
+  margin: 3px 80px;
+  transition: background-color var(--transitionTime);
+  transition: var(--transitionTime);
+  overflow: hidden;
+  box-shadow: 2px 2px 10px var(--shadowColor);
+}
+
+.corner p {
+  text-align: center;
+  font-size: 18px; 
+  line-height: 25px;
+  width:auto;
+}
+
+.topnav {
+	padding: 1200px 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .corner {
+    float: right;
+    border-radius: 15px;
+    background: var(--cornerColor);
+    width: 300px;
+    height: 200px;
+    margin: 3px 80px;
+    transition: background-color var(--transitionTime);
+    transition: var(--transitionTime);
+    overflow: hidden;
+    box-shadow: 2px 2px 10px var(--shadowColor);
+  }
+}
