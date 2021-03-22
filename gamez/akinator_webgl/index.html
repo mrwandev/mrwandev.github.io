@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | akinator</title>
-    <link rel="stylesheet" type="text/css" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
     <script src="Build/UnityLoader.js"></script>
     <script>
       UnityLoader.instantiate("unityContainer", "Build/akinator_webgl.json");
@@ -12,5 +13,10 @@
   </head>
   <body>
     <div id="unityContainer" style="width: 1280px; height: 720px; margin: auto"></div>
+    <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">akinator</div>
+      </div>
   </body>
 </html>
