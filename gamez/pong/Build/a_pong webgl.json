@@ -1,6 +1,6 @@
 {
 "companyName": "mrwan",
-"productName": "P.O.N.G",
+"productName": "Pong Game",
 "productVersion": "1.0",
 "dataUrl": "a_pong webgl.data.unityweb",
 "wasmCodeUrl": "a_pong webgl.wasm.code.unityweb",
