@@ -1,0 +1,15 @@
+:root {
+ --transitionTime: .1s;
+}
+
+.body {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	overflow: hidden;
+	transition: background-color var(--transitionTime);
+}
+
+html {
+  scroll-behavior: smooth;
+}
