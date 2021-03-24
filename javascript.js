@@ -72,7 +72,7 @@ function usePassword(usePasswordBool){
 
     update = setInterval(() => {
     var body = document.getElementById("bodyy")
-    var blockPanel;
+    var blockPanel = document.getElementById("block");
     if(blockPanel == null)
     {
         var blockPanel = document.createElement("div");
