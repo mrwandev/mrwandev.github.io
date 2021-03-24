@@ -59,7 +59,7 @@ function usePassword(usePasswordBool, previousBodyColor){
 
     var previousBodyColor;
 
-    if(previousBodyColor = "")
+    if(previousBodyColor == "")
         previousBodyColor = white;
 
     if(usePasswordBool){
