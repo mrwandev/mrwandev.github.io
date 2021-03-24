@@ -50,14 +50,17 @@ function redirectWithTimer(_time, direction, directionStr) {
   }, 1000);
 };
 
-function usePassword(usePasswordBool){
+function usePassword(usePasswordBool, previousBodyColor){
     var usePasswordBool;
     var password = "mrwan69";
     var entredPass = "";
 
     var body;
 
-    var previousBodyColor = "red";
+    var previousBodyColor;
+
+    if(previousBodyColor = "")
+        previousBodyColor = white;
 
     if(usePasswordBool){
         var blockPanel = document.createElement("div");
