@@ -82,11 +82,8 @@ function usePassword(usePasswordBool){
         blockPanel.setAttribute('id', 'block');
         body.prepend(blockPanel);
     }
-    else if(blockPanel != null)
+    else
         blockPanel = document.getElementById("block");
-    
-    else if(blockPanel.style.width != '100%' || blockPanel.style.height != '100%' || blockPanel.style.backgroundColor != '#131313' || blockPanel.style.position != 'fixed')
-        blockPanel.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
 
     var passwordInput = document.getElementById("passwordInputID");
 
