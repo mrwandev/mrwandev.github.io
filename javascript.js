@@ -71,11 +71,29 @@ function usePassword(usePasswordBool){
     }
 
     update = setInterval(() => {
-    entredPass = document.getElementById("passwordInputID").value;
 
     if(entredPass == password){
+
         var body = document.getElementById("bodyy")
-        var blockPanel = document.getElementById("block");
+        var blockPanel;
+        if(blockPanel == null)
+        {
+            var blockPanel = document.createElement("div");
+            blockPanel.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
+            blockPanel.setAttribute('id', 'block');
+        }
+        else
+            blockPanel = document.getElementById("block");
+
+        if(passwordInput == null)
+        {
+            var passwordInput = document.createElement("input");
+            passwordInput.setAttribute('id', 'passwordInputID');
+            passwordInput.setAttribute('type', 'text');
+        }
+        else
+            entredPass = document.getElementById("passwordInputID").value;
+
         body.setAttribute('style', 'background-color: white');
         body.removeChild(blockPanel);
         clearInterval(update);
