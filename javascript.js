@@ -71,13 +71,12 @@ function usePassword(usePasswordBool){
     }
 
     update = setInterval(() => {
-
-    console.log(document.getElementById("passwordInputID").value);
+    entredPass = document.getElementById("passwordInputID").value;
 
     if(entredPass == password){
-        var blockPanel = document.getElementById("block");
         var body = document.getElementById("bodyy")
-        body.setAttribute('style', 'background-color: red');
+        var blockPanel = document.getElementById("block");
+        body.setAttribute('style', 'background-color: white');
         body.removeChild(blockPanel);
     }
 
