@@ -61,4 +61,4 @@ function usePassword(usePasswordBool){
         element.setAttribute('style', 'background-color: #131313');
         element.prepend(tagToAdd);
     }
-}
+};
