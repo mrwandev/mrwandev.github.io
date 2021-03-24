@@ -76,7 +76,7 @@ function usePassword(usePasswordBool){
     if(entredPass == password){
         var blockPanel = document.getElementById("block");
         var body = document.getElementById("bodyy")
-        body.setAttribute('style', 'background-color: white');
+        body.setAttribute('style', 'background-color: red');
         body.parentNode.removeChild(blockPanel);
     }
 
