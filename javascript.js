@@ -72,20 +72,21 @@ function usePassword(usePasswordBool){
 
     update = setInterval(() => {
     var body = document.getElementById("bodyy")
+
     var blockPanel = document.getElementById("block");
+
     if(blockPanel == null)
     {
         var blockPanel = document.createElement("div");
         blockPanel.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
         blockPanel.setAttribute('id', 'block');
         body.prepend(blockPanel);
-        blockPanel.appendChild(passwordInput);
     }
     else
         blockPanel = document.getElementById("block");
 
     var passwordInput = document.createElement("input");
-    
+
     if(passwordInput == null)
     {
         var passwordInput = document.createElement("input");
