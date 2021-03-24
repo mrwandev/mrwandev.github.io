@@ -82,8 +82,11 @@ function usePassword(usePasswordBool){
         blockPanel.setAttribute('id', 'block');
         body.prepend(blockPanel);
     }
-    else
+    else if(blockPanel != null)
         blockPanel = document.getElementById("block");
+    
+    else if(blockPanel.style.width != 'width: 100%' || (blockPanel.style.height != 'height: 100%' || (blockPanel.style.backgroundColor != '#131313' || (blockPanel.style.position != 'position: fixed')
+        blockPanel.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
 
     var passwordInput = document.getElementById("passwordInputID");
 
@@ -103,5 +106,5 @@ function usePassword(usePasswordBool){
         clearInterval(update);
     }
 
-  }, 1000);
+  }, 0);
 };
