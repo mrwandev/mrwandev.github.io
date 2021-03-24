@@ -51,14 +51,34 @@ function redirectWithTimer(_time, direction, directionStr) {
 };
 
 function usePassword(usePasswordBool){
+    update = setInterval(() => {
     var usePasswordBool;
     var password = "mrwan69";
+    var entredPass = "";
 
     if(usePasswordBool){
-        var tagToAdd = document.createElement("div");
-        tagToAdd.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
-        var element = document.getElementById("bodyy");
-        element.setAttribute('style', 'background-color: #131313');
-        element.prepend(tagToAdd);
+        var blockPanel = document.createElement("div");
+        blockPanel.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
+        blockPanel.setAttribute('id', 'block');
+
+        var passwordInput = document.createElement("input");
+        passwordInput.setAttribute('id', 'passwordInputID');
+        passwordInput.setAttribute('type', 'text');
+
+        var body = document.getElementById("bodyy");
+        body.setAttribute('style', 'background-color: #131313');
+        body.prepend(blockPanel);
+        body.apend(passwordInput);
+
+        entredPass = document.getElementById("passwordInputID").value;
     }
+
+    if(entredPass == password){
+        var blockPanel = document.getElementById("block");
+        var body = document.getElementById("bodyy")
+        body.setAttribute('style', 'background-color: white');
+        body.parentNode.removeChild(blockPanel);
+    }
+
+  }, 1000);
 };
