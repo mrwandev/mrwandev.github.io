@@ -81,6 +81,8 @@ function usePassword(usePasswordBool){
             var blockPanel = document.createElement("div");
             blockPanel.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
             blockPanel.setAttribute('id', 'block');
+            body.prepend(blockPanel);
+            blockPanel.appendChild(passwordInput);
         }
         else
             blockPanel = document.getElementById("block");
@@ -90,6 +92,7 @@ function usePassword(usePasswordBool){
             var passwordInput = document.createElement("input");
             passwordInput.setAttribute('id', 'passwordInputID');
             passwordInput.setAttribute('type', 'text');
+            blockPanel.appendChild(passwordInput);
         }
         else
             entredPass = document.getElementById("passwordInputID").value;
