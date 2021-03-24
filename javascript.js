@@ -60,7 +60,7 @@ function usePassword(usePasswordBool, previousBodyColor){
     var previousBodyColor;
 
     if(previousBodyColor == "")
-        previousBodyColor = white;
+        previousBodyColor = "white";
 
     if(usePasswordBool){
         var blockPanel = document.createElement("div");
