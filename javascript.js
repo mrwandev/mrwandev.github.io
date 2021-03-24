@@ -69,19 +69,16 @@ function usePassword(usePasswordBool){
         body.prepend(blockPanel);
         blockPanel.appendChild(passwordInput);
     }
-    
+
     update = setInterval(() => {
     entredPass = document.getElementById("passwordInputID").value;
 
-
-    
-
-    // if(entredPass == password){
-    //     var blockPanel = document.getElementById("block");
-    //     var body = document.getElementById("bodyy")
-    //     body.setAttribute('style', 'background-color: red');
-    //     body.parentNode.removeChild(blockPanel);
-    // }
+    if(entredPass == password){
+        var blockPanel = document.getElementById("block");
+        var body = document.getElementById("bodyy")
+        body.setAttribute('style', 'background-color: red');
+        body.parentNode.removeChild(blockPanel);
+    }
 
   }, 1000);
 };
