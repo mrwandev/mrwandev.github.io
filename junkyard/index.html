@@ -17,6 +17,10 @@
 	<a href="../home">polished stuff</a>
 
 	<script>
+		var queryStart = window.location.href.indexOf("?user=");
+		var queryEnd = window.location.href.indexOf("#");
+        var query = window.location.href.slice(queryStart, queryEnd);
+        console.log(query)
 		usePassword(true, "");
 	</script>
 </body>
