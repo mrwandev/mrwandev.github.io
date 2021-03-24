@@ -57,8 +57,7 @@ function usePassword(usePasswordBool){
 
     var body;
 
-    // var previousBodyColor = body.style.backgroundColor;
-    console.log(document.body.style.backgroundColor)
+    var previousBodyColor = "red";
 
     if(usePasswordBool){
         var blockPanel = document.createElement("div");
