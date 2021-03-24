@@ -22,10 +22,10 @@ let timePassed = 0;
 var secondsStr;
 
 function redirectWithTimer(_time, direction, directionStr) {
-  const time = _time + 1;
-  let timeLeft = time;
-  timerInterval = setInterval(() => {
-    
+    const time = _time + 1;
+    let timeLeft = time;
+    timerInterval = setInterval(() => {
+        
     // The amount of time passed increments by one
     timePassed = timePassed += 1;
     timeLeft = time - timePassed;
@@ -34,7 +34,7 @@ function redirectWithTimer(_time, direction, directionStr) {
       direction = "http://mrwandev.github.io/junkyard";
 
     if(directionStr == "")
-          directionStr = "the junkyard";
+        directionStr = "the junkyard";
         
     if(timeLeft == 0)
     	window.location.replace(direction);
@@ -49,3 +49,16 @@ function redirectWithTimer(_time, direction, directionStr) {
 	document.getElementById("text").innerHTML = "u will be redirected to " + directionStr + " in " + timer(timeLeft) + secondsStr;
   }, 1000);
 };
+
+function usePassword(usePasswordBool){
+    var usePasswordBool;
+    var password = "mrwan69";
+
+    if(usePasswordBool){
+        var tagToAdd = document.createElement("div");
+        tagToAdd.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
+        var element = document.getElementById("bodyy");
+        element.setAttribute('style', 'background-color: #131313');
+        element.prepend(tagToAdd);
+    }
+}
