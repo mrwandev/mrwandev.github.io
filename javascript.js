@@ -125,7 +125,7 @@ function usePassword(usePasswordBool){
         entredPass = document.getElementById("passwordInputID").value;
 
     if(entredPass == password){
-        body.setAttribute('style', 'background-color: ' + previousBodyColor);
+        body.style.backgroundColor = previousBodyColor;
         body.removeChild(blockPanel);
         clearInterval(update);
     }
