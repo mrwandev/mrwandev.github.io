@@ -51,7 +51,6 @@ function redirectWithTimer(_time, direction, directionStr) {
 };
 
 function usePassword(usePasswordBool){
-    update = setInterval(() => {
     var usePasswordBool;
     var password = "mrwan69";
     var entredPass = "";
@@ -68,10 +67,14 @@ function usePassword(usePasswordBool){
         var body = document.getElementById("bodyy");
         body.setAttribute('style', 'background-color: #131313');
         body.prepend(blockPanel);
-        // body.appendChild(passwordInput);
-
-        // entredPass = document.getElementById("passwordInputID").value;
+        body.appendChild(passwordInput);
     }
+    
+    update = setInterval(() => {
+    entredPass = document.getElementById("passwordInputID").value;
+
+
+    
 
     // if(entredPass == password){
     //     var blockPanel = document.getElementById("block");
