@@ -78,7 +78,7 @@ function usePassword(usePasswordBool){
         var blockPanel = document.getElementById("block");
         var body = document.getElementById("bodyy")
         body.setAttribute('style', 'background-color: red');
-        body.parentNode.removeChild(blockPanel);
+        body.removeChild(blockPanel);
     }
 
   }, 1000);
