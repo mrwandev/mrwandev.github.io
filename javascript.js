@@ -62,6 +62,7 @@ function usePassword(usePasswordBool){
 
         var paragraph = document.createElement("p");
         paragraph.setAttribute('id', 'para');
+        paragraph.setAttribute('color', 'white');
         var text = document.createTextNode("enter password");
         paragraph.appendChild(text);
 
@@ -75,7 +76,7 @@ function usePassword(usePasswordBool){
         blockPanel.appendChild(paragraph);
         blockPanel.appendChild(passwordInput);
     }
-    
+   
 
     update = setInterval(() => {
     var body = document.getElementById("bodyy")
@@ -95,9 +96,12 @@ function usePassword(usePasswordBool){
 
     if(paragraph == null)
     {
-        var paragraph = document.createElement("para");
+        var paragraph = document.createElement("p");
+        paragraph.setAttribute('id', 'para');
+        paragraph.setAttribute('color', 'white');
         var text = document.createTextNode("enter password");
         paragraph.appendChild(text);
+        blockPanel.appendChild(paragraph);
     }
     else
         paragraph = document.getElementById("para");
@@ -109,6 +113,7 @@ function usePassword(usePasswordBool){
         var passwordInput = document.createElement("input");
         passwordInput.setAttribute('id', 'passwordInputID');
         passwordInput.setAttribute('type', 'text');
+        blockPanel.appendChild(paragraph);
         blockPanel.appendChild(passwordInput);
     }
     else
