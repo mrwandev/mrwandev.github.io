@@ -84,6 +84,8 @@ function usePassword(usePasswordBool){
     else
         blockPanel = document.getElementById("block");
 
+    var passwordInput = document.createElement("input");
+    
     if(passwordInput == null)
     {
         var passwordInput = document.createElement("input");
