@@ -62,7 +62,7 @@ function usePassword(usePasswordBool){
 
         var paragraph = document.createElement("p");
         paragraph.setAttribute('id', 'para');
-        paragraph.setAttribute('color', 'white');
+        paragraph.setAttribute('style', 'color: white');
         var text = document.createTextNode("enter password");
         paragraph.appendChild(text);
 
