@@ -77,8 +77,7 @@ function usePassword(usePasswordBool){
         blockPanel.appendChild(paragraph);
         blockPanel.appendChild(passwordInput);
     }
-    else
-        return;
+    
 
     update = setInterval(() => {
     var body = document.getElementById("bodyy")
