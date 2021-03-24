@@ -19,9 +19,11 @@
 	<script>
 		var queryStart = window.location.href.indexOf("?user=");
 		var queryEnd = window.location.href.indexOf("#");
-        var query = window.location.href.slice(queryStart, queryEnd - 1);
+        var query = window.location.href.replace("?user=", "").replace("#", "");
         console.log(query)
-		usePassword(true, "");
+
+        if(query != "admin")
+			usePassword(true, "");
 	</script>
 </body>
 </html>
