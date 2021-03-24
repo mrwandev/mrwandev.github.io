@@ -114,7 +114,7 @@ function usePassword(usePasswordBool){
         var passwordInput = document.createElement("input");
         passwordInput.setAttribute('id', 'passwordInputID');
         passwordInput.setAttribute('type', 'text');
-        body.prepend(paragraph);
+        blockPanel.prepend(paragraph);
         blockPanel.appendChild(passwordInput);
     }
     else
