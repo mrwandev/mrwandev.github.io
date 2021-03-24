@@ -57,7 +57,7 @@ function usePassword(usePasswordBool){
 
     var body = document.getElementById("bodyy");
 
-    var previousBodyColor = body.backgroundColor;
+    var previousBodyColor = body.style.backgroundColor;
     console.log(previousBodyColor)
 
     if(usePasswordBool){
