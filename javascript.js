@@ -55,6 +55,10 @@ function usePassword(usePasswordBool){
     var password = "mrwan69";
     var entredPass = "";
 
+    var body = document.getElementById("bodyy");
+
+    var previousBodyColor = body.backgroundColor;
+
     if(usePasswordBool){
         var blockPanel = document.createElement("div");
         blockPanel.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
@@ -120,7 +124,7 @@ function usePassword(usePasswordBool){
         entredPass = document.getElementById("passwordInputID").value;
 
     if(entredPass == password){
-        body.setAttribute('style', 'background-color: white');
+        body.setAttribute('style', 'background-color: ' + previousBodyColor);
         body.removeChild(blockPanel);
         clearInterval(update);
     }
