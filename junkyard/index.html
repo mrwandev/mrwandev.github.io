@@ -19,7 +19,7 @@
 	<script>
 		var queryStart = window.location.href.indexOf("?user=");
 		var queryEnd = window.location.href.indexOf("#");
-        var query = window.location.href.slice(queryStart, queryEnd);
+        var query = window.location.href.slice(queryStart, queryEnd - 1);
         console.log(query)
 		usePassword(true, "");
 	</script>
