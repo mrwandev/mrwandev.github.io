@@ -75,10 +75,10 @@ function usePassword(usePasswordBool){
         blockPanel.appendChild(paragraph);
         blockPanel.appendChild(passwordInput);
     }
+    
 
     update = setInterval(() => {
     var body = document.getElementById("bodyy")
-
     var blockPanel = document.getElementById("block");
 
     if(blockPanel == null)
@@ -119,6 +119,5 @@ function usePassword(usePasswordBool){
         body.removeChild(blockPanel);
         clearInterval(update);
     }
-
   }, 0);
 };
