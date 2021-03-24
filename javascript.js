@@ -60,6 +60,11 @@ function usePassword(usePasswordBool){
         blockPanel.setAttribute('style', 'width: 100%; height: 100%; background-color: #131313; position: fixed;');
         blockPanel.setAttribute('id', 'block');
 
+        var paragraph = document.createElement("p");
+        paragraph.setAttribute('id', 'para');
+        var text = document.createTextNode("enter password");
+        paragraph.appendChild(text);
+
         var passwordInput = document.createElement("input");
         passwordInput.setAttribute('id', 'passwordInputID');
         passwordInput.setAttribute('type', 'text');
@@ -67,6 +72,7 @@ function usePassword(usePasswordBool){
         var body = document.getElementById("bodyy");
         body.setAttribute('style', 'background-color: #131313');
         body.prepend(blockPanel);
+        blockPanel.appendChild(paragraph);
         blockPanel.appendChild(passwordInput);
     }
 
@@ -84,6 +90,17 @@ function usePassword(usePasswordBool){
     }
     else
         blockPanel = document.getElementById("block");
+
+    var paragraph = document.getElementById("para");
+
+    if(paragraph == null)
+    {
+        var paragraph = document.createElement("para");
+        var text = document.createTextNode("enter password");
+        paragraph.appendChild(text);
+    }
+    else
+        paragraph = document.getElementById("para");
 
     var passwordInput = document.getElementById("passwordInputID");
 
