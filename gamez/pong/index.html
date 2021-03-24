@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script> -->
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/a_pong webgl.json", {onProgress: UnityProgress});
-      $('#unityContainer').find('button').click();
+      // $('#unityContainer').find('button').click();
     </script>
   </head>
   <body style="background-color: #131313">
@@ -20,7 +21,7 @@
   	<br>
   	<br>
   	<br>
-    <div class="webgl-content" style="width: 80%; height: 80%">
+    <div class="webgl-content" style="width: 90%; height: 90%">
       <div id="unityContainer"></div>
       <div class="footer">
         <!-- <div class="webgl-logo"></div> -->
