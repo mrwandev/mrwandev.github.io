@@ -73,6 +73,8 @@ function usePassword(usePasswordBool){
     update = setInterval(() => {
     entredPass = document.getElementById("passwordInputID").value;
 
+    console.log(entredPass);
+
     if(entredPass == password){
         var blockPanel = document.getElementById("block");
         var body = document.getElementById("bodyy")
