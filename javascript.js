@@ -68,9 +68,9 @@ function usePassword(usePasswordBool){
         var body = document.getElementById("bodyy");
         body.setAttribute('style', 'background-color: #131313');
         body.prepend(blockPanel);
-        body.appendChild(passwordInput);
+        // body.appendChild(passwordInput);
 
-        entredPass = document.getElementById("passwordInputID").value;
+        // entredPass = document.getElementById("passwordInputID").value;
     }
 
     // if(entredPass == password){
