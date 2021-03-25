@@ -4,6 +4,7 @@
 
 <title>nop</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://mrwandev.github.io/javascript.js"></script>
 </head>
 <body>
 	<p>nah bruh cant use this link</p>
@@ -17,39 +18,46 @@
 	<a href="https://mrwandev.github.io/home">polished stuff</a>
 
 	<script>
-		var slashesNum = (window.location.href.split("/").length - 1) - 2; // count slashes and the last -2 for the: https://
-		var where = '';
 
-		// adds ../ with the slashesNum so it gets to the main script where ever u were in the goddamn website
-		for (i = 0; i < slashesNum - 1; i++) 
-		{
-			where += '../';
-		}
+		redirectWithTimer(10, "", "");
 
-		function callRedirect()
-		{
-			redirectWithTimer(10, "", "");
-		};
+		// all of this bullshit bellow kinda worked but u can simply instead of adding ../ to script src type mrwandev.github.io/script smfh, but maybe i'll be useful someday 
 
-		// these 5 lines make a script tag: <script src="javascript.js" id="bruh">< /script> and put it in the head tag
-		var tagToAdd = document.createElement("script");
-		tagToAdd.setAttribute('src', where + 'javascript.js');
-		tagToAdd.setAttribute('id', 'bruh'); // i needed it before but now nah but meeh whatever i jst wanted to keep it there. send me a dm in twitter @mrwandev "yeee boi im frm the code" if u read this.
-		var element = document.getElementById("thehead");
-		element.appendChild(tagToAdd);
 
-		// checks if there is a script tag cuz else it'll skip the function that redirects
-		let update = null;
 
-		update = setInterval(() => 
-		{
-			if(document.querySelector('head').contains(document.querySelector('script')))
-			{
-				// function that calls another function cuz cant call function in main file from this interval
-				callRedirect();
-				clearInterval(update);
-			}
-		}, 0);
+		// var slashesNum = (window.location.href.split("/").length - 1) - 2; // count slashes and the last -2 for the: https://
+		// var where = '';
+
+		// // adds ../ with the slashesNum so it gets to the main script where ever u were in the goddamn website
+		// for (i = 0; i < slashesNum - 1; i++) 
+		// {
+		// 	where += '../';
+		// }
+
+		// function callRedirect()
+		// {
+		// 	redirectWithTimer(10, "", "");
+		// };
+
+		// // these 5 lines make a script tag: <script src="javascript.js" id="bruh">< /script> and put it in the head tag
+		// var tagToAdd = document.createElement("script");
+		// tagToAdd.setAttribute('src', where + 'javascript.js');
+		// tagToAdd.setAttribute('id', 'bruh'); // i needed it before but now nah but meeh whatever i jst wanted to keep it there. send me a dm in twitter @mrwandev "yeee boi im frm the website code" if u read this.
+		// var element = document.getElementById("thehead");
+		// element.appendChild(tagToAdd);
+
+		// // checks if there is a script tag cuz else it'll skip the function that redirects
+		// let update = null;
+
+		// update = setInterval(() => 
+		// {
+		// 	if(document.querySelector('head').contains(document.querySelector('script')))
+		// 	{
+		// 		// function that calls another function cuz cant call function in main file from this interval
+		// 		callRedirect();
+		// 		clearInterval(update);
+		// 	}
+		// }, 0);
 	</script>
 	</body>
 </html>
