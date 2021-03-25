@@ -20,15 +20,12 @@
 	<a href="../home" style="color: white">polished stuff</a>
 
 	<script>
-		var use;
-		use = false;
-
 		var queryStart = window.location.href.indexOf("?user=");
 		var queryEnd = window.location.href.indexOf("#");
         var query = window.location.href.slice(queryStart, queryEnd).replace("?user=", "").replace("#", "");
 
-        if(query != "admin" || use)
-			usePassword(true, "#131313");
+        if(query != "admin")
+			usePassword(false, "#131313");
 	</script>
 </body>
 </html>
