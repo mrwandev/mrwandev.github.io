@@ -37,7 +37,8 @@ function redirectWithTimer(_time, direction, directionStr) {
         directionStr = "the junkyard";
         
     if(timeLeft == 0)
-    	window.location.replace(direction);
+        window.location.href(direction);
+    	// window.location.replace(direction); // cant go back to last location
     
     if(timeLeft > 1 || timeLeft == 0) {
     	secondsStr = " seconds";
