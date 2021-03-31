@@ -37,7 +37,15 @@ function redirectWithTimer(_time, direction, directionStr) {
         directionStr = "the junkyard";
         
     if(timeLeft == 0)
-        window.location.href(direction);
+    {
+        const nextURL = 'https://my-website.com/page_b';
+        const nextTitle = 'My new page title';
+        const nextState = { additionalInformation: 'Updated the URL with JS' };
+
+        // This will create a new entry in the browser's history, without reloading
+        window.history.pushState(nextState, nextTitle, nextURL);
+    }
+        // window.location.href(direction);
     	// window.location.replace(direction); // cant go back to last location
     
     if(timeLeft > 1 || timeLeft == 0) {
