@@ -38,15 +38,9 @@ function redirectWithTimer(_time, direction, directionStr) {
         
     if(timeLeft == 0)
     {
-        const nextURL = direction;
-        const nextTitle = 'nop';
-        const nextState = { additionalInformation: 'Updated the URL with JS' };
-
-        // This will create a new entry in the browser's history, without reloading
-        window.history.pushState(nextState, nextTitle, nextURL);
-    }
-        // window.location.href(direction);
+    	window.location.href(direction);
     	// window.location.replace(direction); // cant go back to last location
+    }
     
     if(timeLeft > 1 || timeLeft == 0) {
     	secondsStr = " seconds";
