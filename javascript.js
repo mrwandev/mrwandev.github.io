@@ -37,17 +37,13 @@ function redirectWithTimer(_time, direction, directionStr) {
         directionStr = "the junkyard";
         
     if(timeLeft == 0)
-    {
-    	window.location.href(direction);
-    	// window.location.replace(direction); // cant go back to last location
-    }
+    	window.location.replace(direction); // cant go back to last location
     
-    if(timeLeft > 1 || timeLeft == 0) {
+    if(timeLeft > 1 || timeLeft == 0)
     	secondsStr = " seconds";
-    }
-    else if (timeLeft == 1){
+
+    else if (timeLeft == 1)
     	secondsStr = " second";
-    }
 
 	document.getElementById("text").innerHTML = "u will be redirected to " + directionStr + " in " + timer(timeLeft) + secondsStr;
   }, 1000);
