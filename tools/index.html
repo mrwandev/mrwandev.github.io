@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js"></script>
+</head>
+<body id="bodyy">
+	<p id="text">some tools</p>
+	<a>ascii to hex n' binary</a>
+	<br>
+	<input type="text" id="input"><br>
+	<input type="text" id="output">
+
+	<script>
+
+		function replaceAllOccurrences(inputString, oldStr, newStr) 
+		{
+		    inputString = inputString.replace(oldStr, newStr);
+
+		    return inputString;
+		}
+
+		update = setInterval(() => 
+		{
+			var input = document.getElementById("input").value;	
+			var output = document.getElementById("output").value;
+
+			for(var i = 0; i < input.length; i++) {
+				for(var char = 0; char < ascii.length; char++) {
+					if(input[i] == ascii[char]) {
+						replaceAllOccurrences(document.getElementById("output").value, ascii[char], hex[ascii.indexOf(ascii[char])]);
+					}
+				}
+			}
+		}, 
+		500);
+	</script>
+</body>
+</html>
