@@ -5,11 +5,13 @@
 <title>blogs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://mrwandev.github.io/javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="file.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue">
 </head>
 <body id="bodyy">
-	<p id="text0">blogs</p>
+	<p id="text0" style="font-size:30px">blogs</p>
 	<br>
-	<a id="text1" onclick="changeColor()">change color</a>
+	<a id="text1" onclick="changeColor()">change color (click me)</a>
 	<br>
 	<br>
 	<a id="text2" href="../">index</a>
@@ -24,17 +26,11 @@
 	<br>
 	<br>
 	<br>
-	<a id="text7" href="unity android porting">unity android porting</a>
+	<a id="text7" style="font-size:20px" href="unity android porting">unity android porting</a>
 
 	<script>
 
 		var mrwandev_website_themeColor = 0;
-
-		// if(localStorage.mrwandev_website_themeColor == null)
-			// localStorage.setItem("mrwandev_website_themeColor", JSON.stringify(mrwandev_website_themeColor));
-
-		// if(localStorage.mrwandev_website_themeColor != null)
-			// mrwandev_website_themeColor = localStorage.getItem(mrwandev_website_themeColor);
 
 		function changeColor() {
 			if(mrwandev_website_themeColor == 0)
@@ -56,7 +52,7 @@
 		        document.getElementById("text4").style.color = "#131313";
 		        document.getElementById("text5").style.color = "#131313";
 		        document.getElementById("text6").style.color = "#131313";
-		        document.getElementById("text7").style.color = "#131313";
+		        document.getElementById("text7").style.color = "#0046FF";
 
 		    } 
 		    else 
@@ -70,7 +66,7 @@
 		        document.getElementById("text4").style.color = "#e1e1e1";
 		        document.getElementById("text5").style.color = "#e1e1e1";
 		        document.getElementById("text6").style.color = "#e1e1e1";
-		        document.getElementById("text7").style.color = "#e1e1e1";
+		        document.getElementById("text7").style.color = "#009BFF";
 		    }
 
 	 	}, 0);
