@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>unity android porting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://mrwandev.github.io/javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="file.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue">
+</head>
+<body id="bodyy">
+	<p id="text0">unity android porting</p>
+	<br>
+	<a id="text1" onclick="changeColor()">change color</a>
+	<br>
+	<br>
+	<a id="text2" href="../">index</a>
+	<br>
+	<a id="text3" href="../junkyard">thejunkyard</a>
+	<br>
+	<a id="text4" href="../memez">memez</a>
+	<br>
+	<a id="text5" href="../gamez">gamez</a>
+	<br>
+	<a id="text6" href="../home">polished stuff</a>
+	<br>
+	<br>
+	<br>
+	<a id="text7" class="textClass">unity need sdk and jdk.</a>
+	<br>
+	<br>
+	<a id="text8" class="textClass">for the sdk :</a>
+	<br>
+	<br>
+	<a id="text9" class="textClass"> u can download sdk by downloading the </a><a id="text10" class="textClass" href="https://developer.android.com/studio">android studio</a><a id="text11" class="textClass"> and waiting for it to install everything, then copying the files at "C:\Users\username\AppData\Local\Android\sdk\" to some folder. after uninstall android studio and download this </a><a id="text12" class="textClass" href="https://developer.android.com/studio">command line tools(go to the very down of the page)</a><a id="text13" class="textClass"> to download any version u want of the android builds(so if u have the 11th build version that is API level 30 u'll be able to port an android app with unity and use it in android 11) an here is a </a><a id="text14" class="textClass" href="https://developer.android.com/studio/command-line/sdkmanager">guide</a><a id="text15" class="textClass"> on how to use the sdk manager with the command line tools but what u'll need essentially is to go to the command line tools folder frm zip u downloaded and go to "bin" folder and (in windows) to open a command in that folder go to the folder path and type "cmd" then type in the command window this : sdkmanager "platforms;android-28" --sdk_root=C:\Users\username\Downloads\programz\sdks . u can change the "sdk_root" to where u putted the copied files frm the android studio and for the index "28" it represent the API level and u can change it based on this </a><a id="text16" class="textClass" href="https://source.android.com/setup/start/build-numbers">guide.</a><a id="text17" class="textClass"> and after that u can locate from unity the sdk by pasting the sdk folder path to "Preferences > External Tools" (under android).</a>
+	<br>
+	<br>
+	<a id="text18" class="textClass"> and for the jdk :</a>
+	<br>
+	<br>
+	<a id="text19" class="textClass"> u will jst have to download </a><a id="text20" class="textClass" href="https://www.openlogic.com/openjdk-downloads">the open jdk</a><a id="text21" class="textClass"> and save to some folder and locate too in unity.</a>
+
+	<script>
+
+		var mrwandev_website_themeColor = 0;
+
+		// if(localStorage.mrwandev_website_themeColor == null)
+			// localStorage.setItem("mrwandev_website_themeColor", JSON.stringify(mrwandev_website_themeColor));
+
+		// if(localStorage.mrwandev_website_themeColor != null)
+			// mrwandev_website_themeColor = localStorage.getItem(mrwandev_website_themeColor);
+
+		function changeColor() {
+			if(mrwandev_website_themeColor == 0)
+				mrwandev_website_themeColor = 1;
+			else if(mrwandev_website_themeColor == 1)
+				mrwandev_website_themeColor = 0;
+		}
+
+	    setInterval(function(){
+
+			if(mrwandev_website_themeColor == 0) 
+			{
+		        document.body.style.background = "#f1f1f1";
+
+		        document.getElementById("text0").style.color = "#131313";
+		        document.getElementById("text1").style.color = "#131313";
+		        document.getElementById("text2").style.color = "#0046FF";
+		        document.getElementById("text3").style.color = "#0046FF";
+		        document.getElementById("text4").style.color = "#0046FF";
+		        document.getElementById("text5").style.color = "#0046FF";
+		        document.getElementById("text6").style.color = "#0046FF";
+		        document.getElementById("text7").style.color = "#131313";
+		        document.getElementById("text8").style.color = "#131313";
+		        document.getElementById("text9").style.color = "#131313";
+		        document.getElementById("text10").style.color = "#0046FF";
+		        document.getElementById("text11").style.color = "#131313";
+		        document.getElementById("text12").style.color = "#0046FF";
+		        document.getElementById("text13").style.color = "#131313";
+		        document.getElementById("text14").style.color = "#0046FF";
+		        document.getElementById("text15").style.color = "#131313";
+		        document.getElementById("text16").style.color = "#0046FF";
+		        document.getElementById("text17").style.color = "#131313";
+		        document.getElementById("text18").style.color = "#131313";
+		        document.getElementById("text19").style.color = "#131313";
+		        document.getElementById("text20").style.color = "#0046FF";
+		        document.getElementById("text21").style.color = "#131313";
+
+		    } 
+		    else 
+		    {
+		        document.body.style.background = "#131313";
+
+		        document.getElementById("text0").style.color = "#e1e1e1";
+		        document.getElementById("text1").style.color = "#e1e1e1";
+		        document.getElementById("text2").style.color = "#009BFF";
+		        document.getElementById("text3").style.color = "#009BFF";
+		        document.getElementById("text4").style.color = "#009BFF";
+		        document.getElementById("text5").style.color = "#009BFF";
+		        document.getElementById("text6").style.color = "#009BFF";
+		        document.getElementById("text7").style.color = "#e1e1e1";
+		        document.getElementById("text8").style.color = "#e1e1e1";
+		        document.getElementById("text9").style.color = "#e1e1e1";
+		        document.getElementById("text10").style.color = "#009BFF";
+		        document.getElementById("text11").style.color = "#e1e1e1";
+		        document.getElementById("text12").style.color = "#009BFF";
+		        document.getElementById("text13").style.color = "#e1e1e1";
+		        document.getElementById("text14").style.color = "#009BFF";
+		        document.getElementById("text15").style.color = "#e1e1e1";
+		        document.getElementById("text16").style.color = "#009BFF";
+		        document.getElementById("text17").style.color = "#e1e1e1";
+		        document.getElementById("text18").style.color = "#e1e1e1";
+		        document.getElementById("text19").style.color = "#e1e1e1";
+		        document.getElementById("text20").style.color = "#009BFF";
+		        document.getElementById("text21").style.color = "#e1e1e1";
+		    }
+
+	 	}, 0);
+
+		usePassword(false);
+	</script>
+</body>
+</html>
