@@ -4,3 +4,8 @@ body {
 .textClass {
   font-size: 20px;
 }
+
+div {
+	padding-right: screen.width/10;
+ 	padding-left: -screen.width/10;
+}

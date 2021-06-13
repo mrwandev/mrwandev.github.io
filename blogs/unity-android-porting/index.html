@@ -10,19 +10,20 @@
 </head>
 <body id="bodyy">
 	<p id="text0" style="font-size:30px">unity android porting</p>
+	<p id="text01" style="font-size:15px">[Posted in (6/12/2021)] --- [Last updated (6/13/2021)]</p>
 	<br>
 	<a id="text1" onclick="changeColor()">change color (click me)</a>
 	<br>
 	<br>
-	<a id="text2" href="../">index</a>
+	<a id="text2" href="mrwandev.github.io/">index</a>
 	<br>
-	<a id="text3" href="../junkyard">thejunkyard</a>
+	<a id="text3" href="mrwandev.github.io/junkyard">thejunkyard</a>
 	<br>
-	<a id="text4" href="../memez">memez</a>
+	<a id="text4" href="mrwandev.github.io/memez">memez</a>
 	<br>
-	<a id="text5" href="../gamez">gamez</a>
+	<a id="text5" href="mrwandev.github.io/gamez">gamez</a>
 	<br>
-	<a id="text6" href="../home">polished stuff</a>
+	<a id="text6" href="mrwandev.github.io/home">polished stuff</a>
 	<br>
 	<br>
 	<br>
@@ -32,21 +33,21 @@
 	<a id="text8" class="textClass">for the sdk :</a>
 	<br>
 	<br>
-	<a id="text9" class="textClass"> u can download sdk by downloading the </a>
-	<a id="text10" class="textClass" href="https://developer.android.com/studio">android studio</a>
-	<a id="text11" class="textClass"> and waiting for it to install everything, then copying the files at "C:\Users\username\AppData\Local\Android\sdk\" to some folder, and u should have these folders (.temp, build-tools, licenses, patcher, platforms, platform-tools, tools, .knownPackages(file) ). after uninstall android studio and download this </a>
-	<a id="text12" class="textClass" href="https://developer.android.com/studio">command line tools (go to the very down of the page)</a>
-	<a id="text13" class="textClass"> to be able to download any version u want of the android builds (so if u have the 11th build version that is API level 30 u'll be able to port an android app with unity and use it in android 11) and here is a </a>
-	<a id="text14" class="textClass" href="https://developer.android.com/studio/command-line/sdkmanager">guide</a>
-	<a id="text15" class="textClass"> on how to use the sdk manager with the command line tools but what u'll need essentially is to go to the command line tools folder frm zip u downloaded and go to "bin" folder and (in windows) to open a command in that folder go to the folder path and type "cmd" then type in the command window this : sdkmanager "platforms;android-28" --sdk_root=C:\Users\username\Downloads\programz\sdks . u can change the "sdk_root" to where u putted the copied files frm the android studio and for the index "28" it represent the API level and u can change it based on this </a>
-	<a id="text16" class="textClass" href="https://source.android.com/setup/start/build-numbers">guide.</a>
-	<a id="text17" class="textClass"> and after that u can locate from unity the sdk by pasting the sdk folder path to "Preferences > External Tools" (under android).</a>
+	<a style="line-height: 1.8;" id="text9" class="textClass"> u can download sdk by downloading the </a>
+	<a style="line-height: 1.8;" id="text10" class="textClass" href="https://developer.android.com/studio">android studio</a>
+	<a style="line-height: 1.8;" id="text11" class="textClass"> and waiting for it to install everything, then copying the files at "C:\Users\username\AppData\Local\Android\sdk\" to some folder, and u should have these folders (.temp, build-tools, licenses, patcher, platforms, platform-tools, tools, .knownPackages(file) ). after uninstall android studio and download this </a>
+	<a style="line-height: 1.8;" id="text12" class="textClass" href="https://developer.android.com/studio">command line tools (go to the very down of the page)</a>
+	<a style="line-height: 1.8;" id="text13" class="textClass"> to be able to download any version u want of the android builds (so if u have the 11th build version that is API level 30 u'll be able to port an android app with unity and use it in android 11) and here is a </a>
+	<a style="line-height: 1.8;" id="text14" class="textClass" href="https://developer.android.com/studio/command-line/sdkmanager">guide</a>
+	<a style="line-height: 1.8;" id="text15" class="textClass"> on how to use the sdk manager with the command line tools but what u'll need essentially is to go to the command line tools folder frm zip u downloaded and go to "bin" folder and (in windows) to open a command in that folder go to the folder path and type "cmd" press enter, then type in the command window this : sdkmanager "platforms;android-28" --sdk_root=C:\Users\username\Downloads\programz\sdks . u can change the "sdk_root" to where u putted the copied files frm the android studio and for the index "28" it represent the API level and u can change it based on this </a>
+	<a style="line-height: 1.8;" id="text16" class="textClass" href="https://source.android.com/setup/start/build-numbers">guide.</a>
+	<a style="line-height: 1.8;" id="text17" class="textClass"> and after that u can locate from unity the sdk by pasting the sdk folder path to "Preferences > External Tools" (under android).</a>
 	<br>
 	<br>
-	<a id="text18" class="textClass"> and for the jdk :</a>
+	<a style="line-height: 1.8;" id="text18" class="textClass"> and for the jdk :</a>
 	<br>
 	<br>
-	<a id="text19" class="textClass"> u will jst have to download </a><a id="text20" class="textClass" href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=All&field_architecture_target_id=All&field_java_package_target_id=396">the open jdk</a><a id="text21" class="textClass"> extract and save to some folder and locate too in unity.</a>
+	<a style="line-height: 1.8;" id="text19" class="textClass"> u will jst have to download </a><a style="line-height: 1.8;" id="text20" class="textClass" href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=All&field_architecture_target_id=All&field_java_package_target_id=396">the open jdk</a><a style="line-height: 1.8;" id="text21" class="textClass"> extract and save to some folder and locate too in unity.</a>
 
 	<script>
 
@@ -72,6 +73,7 @@
 		        document.body.style.background = "#f1f1f1";
 
 		        document.getElementById("text0").style.color = "#131313";
+		        document.getElementById("text01").style.color = "#131313";
 		        document.getElementById("text1").style.color = "#131313";
 		        document.getElementById("text2").style.color = "#0046FF";
 		        document.getElementById("text3").style.color = "#0046FF";
@@ -100,6 +102,7 @@
 		        document.body.style.background = "#131313";
 
 		        document.getElementById("text0").style.color = "#e1e1e1";
+		        document.getElementById("text01").style.color = "#e1e1e1";
 		        document.getElementById("text1").style.color = "#e1e1e1";
 		        document.getElementById("text2").style.color = "#009BFF";
 		        document.getElementById("text3").style.color = "#009BFF";
