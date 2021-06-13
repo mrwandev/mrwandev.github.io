@@ -31,7 +31,7 @@
 		var mrwandev_website_themeColor = 0;
 
 		if(localStorage.mrwandev_website_themeColor == null)
-			localStorage.setItem("mrwandev_website_themeColor", "Smith");
+			localStorage.setItem("mrwandev_website_themeColor", mrwandev_website_themeColor);
 
 		if(localStorage.mrwandev_website_themeColor != null)
 			mrwandev_website_themeColor = localStorage.mrwandev_website_themeColor;
@@ -44,7 +44,7 @@
 		}
 
 	    setInterval(function(){
-	    	
+
 			if(mrwandev_website_themeColor == 0) 
 			{
 		        document.body.style.background = "#f1f1f1";
