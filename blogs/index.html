@@ -7,23 +7,74 @@
 <script src="https://mrwandev.github.io/javascript.js"></script>
 </head>
 <body id="bodyy">
-	<p>blogs</p>
+	<p id="text0">blogs</p>
 	<br>
-	<a href="../">index</a>
-	<br>
-	<a href="../junkyard">thejunkyard</a>
-	<br>
-	<a href="../memez">memez</a>
-	<br>
-	<a href="../gamez">gamez</a>
-	<br>
-	<a href="../home">polished stuff</a>
+	<a id="text1" onclick="changeColor()">change color</a>
 	<br>
 	<br>
+	<a id="text2" href="../">index</a>
 	<br>
-	<a href="coding">coding blogs</a>
+	<a id="text3" href="../junkyard">thejunkyard</a>
+	<br>
+	<a id="text4" href="../memez">memez</a>
+	<br>
+	<a id="text5" href="../gamez">gamez</a>
+	<br>
+	<a id="text6" href="../home">polished stuff</a>
+	<br>
+	<br>
+	<br>
+	<a id="text7" href="coding">coding blogs</a>
 
 	<script>
+
+		var mrwandev_website_themeColor = 0;
+
+		function changeColor() {
+			if(mrwandev_website_themeColor == 0)
+				mrwandev_website_themeColor = 1;
+			else if(mrwandev_website_themeColor == 1)
+				mrwandev_website_themeColor = 0;
+		}
+
+	    setInterval(function(){
+				
+			if(localStorage.mrwandev_website_themeColor == null)
+				localStorage.setItem("mrwandev_website_themeColor", "Smith");
+
+			if(localStorage.mrwandev_website_themeColor != null)
+				mrwandev_website_themeColor = localStorage.mrwandev_website_themeColor;
+
+			if(mrwandev_website_themeColor == 0) 
+			{
+		        document.body.style.background = "#f1f1f1";
+
+		        document.getElementById("text0").style.color = "#131313";
+		        document.getElementById("text1").style.color = "#131313";
+		        document.getElementById("text2").style.color = "#131313";
+		        document.getElementById("text3").style.color = "#131313";
+		        document.getElementById("text4").style.color = "#131313";
+		        document.getElementById("text5").style.color = "#131313";
+		        document.getElementById("text6").style.color = "#131313";
+		        document.getElementById("text7").style.color = "#131313";
+
+		    } 
+		    else 
+		    {
+		        document.body.style.background = "#131313";
+
+		        document.getElementById("text0").style.color = "#e1e1e1";
+		        document.getElementById("text1").style.color = "#e1e1e1";
+		        document.getElementById("text2").style.color = "#e1e1e1";
+		        document.getElementById("text3").style.color = "#e1e1e1";
+		        document.getElementById("text4").style.color = "#e1e1e1";
+		        document.getElementById("text5").style.color = "#e1e1e1";
+		        document.getElementById("text6").style.color = "#e1e1e1";
+		        document.getElementById("text7").style.color = "#e1e1e1";
+		    }
+
+	 	}, 0);
+
 		usePassword(false);
 	</script>
 </body>
